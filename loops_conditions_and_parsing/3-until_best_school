@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#  "Best School" 10 until 
+count=1; until [ "$count" -gt 10 ]; do echo "Best School"; ((count++)); done
