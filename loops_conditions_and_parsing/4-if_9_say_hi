@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Prints Best School 10 times, adds Hi on 9th time
-i=1; while [ $i -le 10 ]; do echo "Best School"; [ $i -eq 9 ] && echo "Hi"; i=$((i+1)); done
+i=1; while [ $i -le 10 ]; do if [ $i -eq 9 ]; then echo "Best School"; echo "Hi"; else echo "Best School"; fi; i=$((i+1)); done
